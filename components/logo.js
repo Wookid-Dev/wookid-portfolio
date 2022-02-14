@@ -18,12 +18,11 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const penguinImg = `/images/dan.png`;
   return (
     <Link href={'/'}>
       <Box display={'grid'}>
         <LogoBox>
-          <Image src={penguinImg} width={40} height={40} alt={'Logo'}></Image>
+          <Image src={'/Images/dan.png'} width={40} height={40} alt={'Logo'}></Image>
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c'
