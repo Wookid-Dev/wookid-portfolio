@@ -4,6 +4,9 @@ module.exports = {
       {
         test: /\.(jpg|png|gif|svg|pdf)$/,
         use: [{ loader: 'file-loader', options: { name: '[name].[ext]', outputPath: './assets/images/' } }],
+        resolve: {
+          alias: { tinycolor: 'tinycolor2' },
+        },
       },
     ],
   },
